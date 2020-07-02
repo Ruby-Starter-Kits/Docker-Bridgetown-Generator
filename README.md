@@ -16,7 +16,9 @@ This will create a Docker Ready version of Bridgetown in the `App` folder.
 
 ## How this works
 
-This will pull down [mikerogers0/bridgetownrb-installer](https://hub.docker.com/repository/docker/mikerogers0/bridgetownrb-installer/general) from docker, which contains everything require to create your bridgetown app locally. Then it'll do `bridgetown new App` & copy all the files required to run under docker into that directory.
+This will pull down [mikerogers0/bridgetownrb-installer](https://hub.docker.com/repository/docker/mikerogers0/bridgetownrb-installer/general) from docker, which contains everything required to create a bridgetown app locally. Then it'll do `bridgetown new App` & copy all the files required to run under docker into that directory.
+
+The aim is to avoid requiring developers to setup ruby & any other dependencies to get started.
 
 ## TODO
 
