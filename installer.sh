@@ -12,6 +12,7 @@ echo "Installing Bridgetown (Via Docker)"
 ## TODO: Check docker exists
 
 ## Run the docker image with the latest version of bridgetown & docker templates
+docker pull mikerogers0/bridgetownrb-installer:latest
 docker run --rm -it -v $(pwd):/usr/src/app mikerogers0/bridgetownrb-installer:latest
 
 ## Build the local container
