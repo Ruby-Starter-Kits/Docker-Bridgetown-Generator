@@ -17,4 +17,5 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: mikerogers0/bridgetownrb-installer
+          cache_froms: mikerogers0/bridgetownrb-installer:latest
           tags: latest
