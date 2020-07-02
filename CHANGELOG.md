@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Always pull down the latest docker image in installer [\#5](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating Readme to include more thoughts [\#4](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/4) ([MikeRogers0](https://github.com/MikeRogers0))
 - Using a monthly cronjob to build the image [\#3](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/3) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding a docker auto build & push script [\#1](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/1) ([MikeRogers0](https://github.com/MikeRogers0))
