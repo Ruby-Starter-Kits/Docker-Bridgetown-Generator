@@ -30,6 +30,8 @@ services:
       yarn start --host '0.0.0.0'"
     ports:
       - "4000:4000"
+      - "4001:4001"
+      - "4002:4002"
 
 volumes:
   bundler:
