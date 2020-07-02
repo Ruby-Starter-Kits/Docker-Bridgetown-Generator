@@ -1,6 +1,6 @@
 # Docker Bridgetown Installer
 
-_Warning: This is a proof of concept repo_
+_Warning: This is a proof of concept repo to experiment with new install approaches_
 
 A quick start for running [Bridgetown](https://www.bridgetownrb.com/) with Docker.
 
@@ -14,11 +14,11 @@ Install [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
 This will create a Docker Ready version of Bridgetown in the `App` folder.
 
-## How this works
+## How this works
 
 This will pull down [mikerogers0/bridgetownrb-installer](https://hub.docker.com/repository/docker/mikerogers0/bridgetownrb-installer/general) from docker, which contains everything require to create your bridgetown app locally. Then it'll do `bridgetown new App` & copy all the files required to run under docker into that directory.
 
-## TODO
+## TODO
 
 * Get blessing from the people behind Bridgetown that this is an acceptable approach
 * Assess if a auto-updating template repo could also work just as well
