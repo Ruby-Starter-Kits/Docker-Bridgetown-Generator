@@ -1,15 +1,14 @@
 name: Docker (Build & Push)
 
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron:  '0 5 1 * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 4
-    if: "!contains(github.event.head_commit.message, '[nodoc]')"
+    if: false
     steps:
       - uses: actions/checkout@master
       - uses: docker/build-push-action@v1
