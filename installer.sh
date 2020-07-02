@@ -11,18 +11,18 @@ echo "Installing Bridgetown (Via Docker)"
 
 ## TODO: Check docker exists
 
-## Run the docker image with the latest version of bridgetown & template
-docker pull mikerogers0/bridgetownrb-installer:latest
+## Run the docker image with the latest version of bridgetown & docker templates
 docker run --rm -it -v $(pwd):/usr/src/app mikerogers0/bridgetownrb-installer:latest
 
 ## Build the local container
 echo "Building docker container for your app"
 docker-compose --file $(pwd)/App/docker-compose.yml build
 
+## Install gems & node modules
 echo "Completing installation"
 docker-compose --file $(pwd)/App/docker-compose.yml run --rm web /bin/sh -c 'bundle && yarn'
 
-## Summarise what people need to do:
+## Summarise what people need to do next:
 echo "You're good to go"
 echo "Installed to directory: $(pwd)/App"
 echo "To start your rails server: cd $(pwd)/App && docker-compose up"
