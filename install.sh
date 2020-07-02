@@ -5,7 +5,7 @@ set -u
 # The aim is to only require developers install docker to try Bridgetown.
 # 
 # To run, in terminal run:
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MikeRogers0/Docker-Bridgetown-Installer/master/install.sh)"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MikeRogers0/Docker-Bridgetown-Installer/master/installer.sh)"
 
 echo "Installing Bridgetown (Via Docker)"
 
