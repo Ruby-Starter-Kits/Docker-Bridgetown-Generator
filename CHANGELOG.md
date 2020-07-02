@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Adding note on: bridgetown-automation-docker-compose repo [\#7](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/7) ([MikeRogers0](https://github.com/MikeRogers0))
 - Attaching ports 4001 & 4002 [\#6](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/6) ([MikeRogers0](https://github.com/MikeRogers0))
 - Always pull down the latest docker image in installer [\#5](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating Readme to include more thoughts [\#4](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/4) ([MikeRogers0](https://github.com/MikeRogers0))
