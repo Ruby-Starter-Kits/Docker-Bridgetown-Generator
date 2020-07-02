@@ -7,6 +7,11 @@ require "readline"
   '--skip-yarn'
 ].join(' ')
 
+# TODO:
+# Look into adding the:
+# --apply="https://github.com/ParamagicDev/bridgetown-automation-docker-compose"
+# argument in. It could reduce the duplication of approaches to docker for Bridgetown.
+
 # Install rails
 system("bridgetown new #{@app_path} #{@arguments}")
 
