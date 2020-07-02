@@ -7,6 +7,8 @@ RUN apk add --no-cache --virtual \
     # required
     nodejs-dev yarn bash \
     tzdata build-base libffi-dev \
+    # Nice to haves
+    git \
     #
     # Fixes watch file isses with things like HMR
     libnotify-dev

@@ -4,6 +4,7 @@ LABEL maintainer="Mike Rogers <me@mikerogers.io>"
 
 RUN apk add --no-cache --virtual \
     nodejs-dev yarn bash \
+    git \
     tzdata build-base libffi-dev
 
 FROM builder as bridgetown-installer
