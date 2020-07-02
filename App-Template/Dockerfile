@@ -21,9 +21,6 @@ WORKDIR /usr/src/app
 
 ENV PATH /usr/src/app/bin:$PATH
 
-# Set ruby version
-COPY .ruby-version /usr/src/app
-
 # Install latest bundler
 RUN bundle config --global silence_root_warning 1
 
