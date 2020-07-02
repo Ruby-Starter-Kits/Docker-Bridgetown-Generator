@@ -2,8 +2,13 @@ require "readline"
 
 @app_path = "App"
 
+@arguments = [
+  '--skip-bundle',
+  '--skip-yarn'
+].join(' ')
+
 # Install rails
-system("bridgetown new #{@app_path}")
+system("bridgetown new #{@app_path} #{@arguments}")
 
 # Copy the docker files
 system("cp -raT /usr/src/App-Template/* /usr/src/app/#{@app_path}/")
