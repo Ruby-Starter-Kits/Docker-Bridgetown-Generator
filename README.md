@@ -12,7 +12,7 @@ A quick start for running [Bridgetown](https://www.bridgetownrb.com/) with Docke
 
 Install [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac/) and paste the above snippet into a macOS Terminal or Linux shell prompt.
 
-This will create a Docker Ready version of Bridgetown in the `App` folder.
+This will create a Docker ready version of Bridgetown in the `App` folder.
 
 ## How this works
 

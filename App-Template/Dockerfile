@@ -10,7 +10,7 @@ RUN apk add --no-cache --virtual \
     # Nice to haves
     git \
     #
-    # Fixes watch file isses with things like HMR
+    # Fixes watch file issues with things like HMR
     libnotify-dev
 
 FROM builder as development
