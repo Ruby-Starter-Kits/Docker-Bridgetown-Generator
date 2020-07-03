@@ -1,4 +1,4 @@
 #!/bin/bash
 set -u
 
-docker build $(pwd) -t mikerogers0/bridgetownrb-installer:latest
+docker build $(pwd) -t rubystarterkits/bridgetown-installer:latest

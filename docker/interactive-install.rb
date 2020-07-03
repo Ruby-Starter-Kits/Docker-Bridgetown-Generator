@@ -12,7 +12,7 @@ require "readline"
 # --apply="https://github.com/ParamagicDev/bridgetown-automation-docker-compose"
 # argument in. It could reduce the duplication of approaches to docker for Bridgetown.
 
-# Install rails
+# Install bridgetown
 system("bridgetown new #{@app_path} #{@arguments}")
 
 # Copy the docker files

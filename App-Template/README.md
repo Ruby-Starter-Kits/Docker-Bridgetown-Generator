@@ -17,4 +17,4 @@ Then navigate your browser to https://127.0.0.1:4000/ to see your site.
 * [Bridgetown Documentation](https://www.bridgetownrb.com/docs/)
 * [Bridgetown Plugins](https://www.bridgetownrb.com/plugins/)
 * [Netlify](https://www.netlify.com/)
-* [Docker-Bridgetown-Installer](https://github.com/MikeRogers0/Docker-Bridgetown-Installer)
+* [Docker-Bridgetown-Installer](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer)
