@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Squashing down size of Docker Installer file [\#8](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/8) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding note on: bridgetown-automation-docker-compose repo [\#7](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/7) ([MikeRogers0](https://github.com/MikeRogers0))
 - Attaching ports 4001 & 4002 [\#6](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/6) ([MikeRogers0](https://github.com/MikeRogers0))
 - Always pull down the latest docker image in installer [\#5](https://github.com/MikeRogers0/Docker-Bridgetown-Installer/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
