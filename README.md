@@ -7,7 +7,7 @@ A quick start for running [Bridgetown](https://www.bridgetownrb.com/) with Docke
 ## Usage
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MikeRogers0/Docker-Bridgetown-Installer/master/installer.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/master/installer.sh)"
 ```
 
 Install [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac/) and paste the above snippet into a macOS Terminal or Linux shell prompt.
@@ -16,7 +16,7 @@ This will create a Docker ready version of Bridgetown in the `App` folder.
 
 ## How this works
 
-This will pull down [mikerogers0/bridgetownrb-installer](https://hub.docker.com/repository/docker/mikerogers0/bridgetownrb-installer/general) from docker, which contains everything required to create a bridgetown app locally. Then it'll do `bridgetown new App` & copy all the files required to run under docker into that directory.
+This will pull down [rubystarterkits/bridgetown-installer](https://hub.docker.com/repository/docker/rubystarterkits/bridgetown-installer/general) from docker, which contains everything required to create a bridgetown app locally. Then it'll do `bridgetown new App` & copy all the files required to run under docker into that directory.
 
 The aim is to avoid requiring developers to setup ruby & any other dependencies to get started.
 
