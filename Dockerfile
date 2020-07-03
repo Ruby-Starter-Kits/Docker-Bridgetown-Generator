@@ -23,5 +23,5 @@ COPY docker/interactive-install.rb /usr/src/bin
 # Copy the "better defaults" app template
 COPY App-Template /usr/src/App-Template/
 
-# Let's run the rails new command
+# Let's run the bridgetown new command
 CMD ["ruby", "/usr/src/bin/interactive-install.rb"]

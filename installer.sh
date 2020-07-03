@@ -26,5 +26,5 @@ docker-compose --file $(pwd)/App/docker-compose.yml run --rm web /bin/sh -c 'bun
 ## Summarise what people need to do next:
 echo "You're good to go"
 echo "Installed to directory: $(pwd)/App"
-echo "To start your rails server: cd $(pwd)/App && docker-compose up"
+echo "To start your Bridgetown server: cd $(pwd)/App && docker-compose up"
 echo "Then navigate to: http://127.0.0.1:4000"
