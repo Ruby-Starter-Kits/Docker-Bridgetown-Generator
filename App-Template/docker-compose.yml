@@ -12,10 +12,6 @@ x-app: &app
     target: development
   env_file:
     - .env
-  command: >
-    bash -c "bundle check || bundle install &&
-    yarn install --check-files &&
-    yarn start --host '0.0.0.0'"
   volumes:
     - .:/usr/src/app:cached
     - bundler:/usr/local/bundle:delegated
@@ -29,7 +25,7 @@ services:
       yarn install --check-files &&
       yarn start --host '0.0.0.0'"
     ports:
-      - "4000:4000"
+      - "${PORT:-4000}:4000"
       - "4001:4001"
       - "4002:4002"
 

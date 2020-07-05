@@ -5,10 +5,12 @@ LABEL maintainer="Mike Rogers <me@mikerogers.io>"
 RUN apk add --no-cache --virtual \
     #
     # required
-    nodejs-dev yarn bash \
-    tzdata build-base libffi-dev \
+    bash \
+    build-base libffi-dev \
+    nodejs yarn tzdata \
+    zlib-dev libxml2-dev libxslt-dev readline-dev \
     # Nice to haves
-    git \
+    git vim \
     #
     # Fixes watch file issues with things like HMR
     libnotify-dev
