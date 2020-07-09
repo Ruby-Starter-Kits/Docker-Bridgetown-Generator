@@ -4,8 +4,13 @@
 
 [Full Changelog](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/compare/0c2b7a5b45cdab5d57d8f2ede0343ab3212d9964...HEAD)
 
+**Implemented enhancements:**
+
+- Adding template repo auto builder [\#10](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/10) ([MikeRogers0](https://github.com/MikeRogers0))
+
 **Merged pull requests:**
 
+- I added to wrong link in the Rails Readme [\#11](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/11) ([MikeRogers0](https://github.com/MikeRogers0))
 - Renaming Organisation to Ruby-Starter-Kits [\#9](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/9) ([MikeRogers0](https://github.com/MikeRogers0))
 - Squashing down size of Docker Installer file [\#8](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/8) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding note on: bridgetown-automation-docker-compose repo [\#7](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/7) ([MikeRogers0](https://github.com/MikeRogers0))
