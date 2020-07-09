@@ -1,8 +1,6 @@
 # Docker Bridgetown Installer
 
-_Warning: This is a proof of concept repo to experiment with new install approaches_
-
-A quick start for running [Bridgetown](https://www.bridgetownrb.com/) with Docker.
+A quick start for running [Bridgetown](https://www.bridgetownrb.com/) with Docker. You can see the files it'll generate in [Ruby-Starter-Kits/Docker-Bridgetown-Template](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Template).
 
 ## Usage
 
