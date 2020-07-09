@@ -37,7 +37,7 @@ jobs:
     - name: Build latest template version
       run: |
         cd $GITHUB_WORKSPACE
-        docker run --rm -v $(pwd):/usr/src/app rubystarterkits/bridgetown-installer:latest
+        docker run --rm -v $(pwd):/usr/src/app -BRIDGETOWN_INSTALL_ARGS="--force" rubystarterkits/bridgetown-installer:latest
     - name: Commit any new files
       run: |
         cd $GITHUB_WORKSPACE/Docker-Bridgetown-Installer
