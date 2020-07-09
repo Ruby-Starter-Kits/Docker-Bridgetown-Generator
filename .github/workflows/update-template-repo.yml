@@ -1,0 +1,59 @@
+name: Update Template Repo
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron:  '0 5 1 * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    if: "!contains(github.event.head_commit.message, '[nodoc]')"
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: "Ruby-Starter-Kits/Docker-Bridgetown-Template"
+        path: App
+        persist-credentials: false
+    - uses: actions/checkout@v2
+      with:
+        repository: 'Ruby-Starter-Kits/Docker-Bridgetown-Installer'
+        path: Docker-Bridgetown-Installer
+        persist-credentials: false
+    - uses: docker/build-push-action@v1
+      with:
+        repository: rubystarterkits/bridgetown-installer
+        tags: latest
+        push: false
+        path: Docker-Bridgetown-Installer
+        cache_froms: ruby:2.7.1-alpine, rubystarterkits/bridgetown-installer:latest
+        always_pull: true
+    - name: Clear previous build
+      run: |
+        cd $GITHUB_WORKSPACE/App
+        shopt -s extglob
+        rm -rfv !(".git"|"."|"..")
+    - name: Build latest template version
+      run: |
+        cd $GITHUB_WORKSPACE
+        docker run --rm -v $(pwd):/usr/src/app -e BRIDGETOWN_INSTALL_ARGS="--force" rubystarterkits/bridgetown-installer:latest
+    - name: Commit any new files
+      run: |
+        cd $GITHUB_WORKSPACE/Docker-Bridgetown-Installer
+        DOCKER_BRIDGETOWN_INSTALLER_VERSION="Installer 0.1.0"
+        BRIDGETOWN_VERSION=`docker run --rm rubystarterkits/bridgetown-installer:latest bridgetown -v`
+
+        cd $GITHUB_WORKSPACE/App
+        git config --local user.email "github-actions@example.com"
+        git config --local user.name "GitHub Actions"
+        git add .
+        git commit -am "$BRIDGETOWN_VERSION | $DOCKER_BRIDGETOWN_INSTALLER_VERSION" || echo "No changes to commit"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.LOCAL_GIT_TOKEN }}
+        repository: 'Ruby-Starter-Kits/Docker-Bridgetown-Template'
+        directory: App

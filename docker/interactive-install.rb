@@ -13,7 +13,7 @@ require "readline"
 # argument in. It could reduce the duplication of approaches to docker for Bridgetown.
 
 # Install bridgetown
-system("bridgetown new #{@app_path} #{@arguments}")
+system("bridgetown new #{@app_path} #{@arguments} #{ENV['BRIDGETOWN_INSTALL_ARGS']}")
 
 # Copy the docker files
 system("shopt -s dotglob")
