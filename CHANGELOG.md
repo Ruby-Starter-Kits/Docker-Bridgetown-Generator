@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- Using correct path where build is made [\#12](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/12) ([MikeRogers0](https://github.com/MikeRogers0))
 - I added to wrong link in the Rails Readme [\#11](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/11) ([MikeRogers0](https://github.com/MikeRogers0))
 - Renaming Organisation to Ruby-Starter-Kits [\#9](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/9) ([MikeRogers0](https://github.com/MikeRogers0))
 - Squashing down size of Docker Installer file [\#8](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/8) ([MikeRogers0](https://github.com/MikeRogers0))
