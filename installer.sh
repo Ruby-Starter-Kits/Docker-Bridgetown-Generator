@@ -13,7 +13,7 @@ echo "Installing Bridgetown (Via Docker)"
 
 ## Run the docker image with the latest version of bridgetown & docker templates
 docker pull rubystarterkits/bridgetown-installer:latest
-docker run --rm -it -v $(pwd):/usr/src/app rubystarterkits/bridgetown-installer:latest
+docker run --rm -it -u $(id -u):$(id -g) -v $(pwd):/usr/src/app rubystarterkits/bridgetown-installer:latest
 
 ## Build the local container
 echo "Building docker container for your app"
