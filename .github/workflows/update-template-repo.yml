@@ -40,6 +40,11 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         docker run --rm -v $(pwd):/usr/src/app -e BRIDGETOWN_INSTALL_ARGS="--force" rubystarterkits/bridgetown-installer:latest
+    - name: Run bundle & yarn
+      run: |
+        cd $GITHUB_WORKSPACE/App
+        docker-compose build
+        docker-compose run --rm web /bin/sh -c 'bundle && yarn'
     - name: Commit any new files
       run: |
         cd $GITHUB_WORKSPACE/Docker-Bridgetown-Installer
