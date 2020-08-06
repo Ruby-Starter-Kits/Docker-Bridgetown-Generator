@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- Explictly set NODE\_ENV on Netlify [\#17](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
 - Use default netlify deploy command from Bridgetown [\#16](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/16) ([MikeRogers0](https://github.com/MikeRogers0))
 - Running Bundle & Yarn when building template app [\#15](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/15) ([MikeRogers0](https://github.com/MikeRogers0))
 - Using rsync to copy hidden files from App-Template [\#13](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/13) ([MikeRogers0](https://github.com/MikeRogers0))
