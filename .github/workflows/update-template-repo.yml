@@ -3,7 +3,7 @@ name: Update Template Repo
 on:
   push:
     branches:
-      - master
+      #- master
   schedule:
     - cron:  '0 5 1 * *'
 
@@ -23,35 +23,56 @@ jobs:
         repository: 'Ruby-Starter-Kits/Docker-Bridgetown-Installer'
         path: Docker-Bridgetown-Installer
         persist-credentials: false
-    - uses: docker/build-push-action@v1
+    - name: Set up Ruby 2.7
+      uses: ruby/setup-ruby@v1
       with:
-        repository: rubystarterkits/bridgetown-installer
-        tags: latest
-        push: false
-        path: Docker-Bridgetown-Installer
-        cache_froms: ruby:2.7.1-alpine, rubystarterkits/bridgetown-installer:latest
-        always_pull: true
+        ruby-version: 2.7.1
+    - uses: actions/cache@v1.1.2
+      with:
+        path: ${{ github.workspace }}/vendor/bundle
+        key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gem-
+    - uses: actions/cache@v1.1.2
+      with:
+        path: ${{ github.workspace }}/App/node_modules
+        key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node_modules-
+    - name: Build Environment
+      run: |
+        cd $GITHUB_WORKSPACE/App
+        bundle config path $GITHUB_WORKSPACE/vendor/bundle
+        gem install bridgetown
     - name: Clear previous build
       run: |
         cd $GITHUB_WORKSPACE/App
         shopt -s extglob
-        rm -rfv !(".git"|"."|"..")
-    - name: Build latest template version
+        rm -rfv !(".git"|"."|".."|"node_modules")
+    - name: Build latest version of rails
       run: |
-        cd $GITHUB_WORKSPACE
-        docker run --rm -v $(pwd):/usr/src/app -e BRIDGETOWN_INSTALL_ARGS="--force" rubystarterkits/bridgetown-installer:latest
-    - name: Run bundle & yarn
+        cd $GITHUB_WORKSPACE/App
+        bridgetown new . --force
+    - name: Copy docker files
+      run: |
+        cd $GITHUB_WORKSPACE/App
+        rsync -a $GITHUB_WORKSPACE/Docker-Bridgetown-Installer/App-Template/ $GITHUB_WORKSPACE/App/
+        cp $GITHUB_WORKSPACE/App/.env.sample $GITHUB_WORKSPACE/App/.env
+    - name: Pull docker image
+      run: |
+        cd $GITHUB_WORKSPACE/App
+        docker-compose pull
+    - uses: satackey/action-docker-layer-caching@v0.0.5
+    - name: Test we can build docker
       run: |
         cd $GITHUB_WORKSPACE/App
         docker-compose build
-        docker-compose run --rm web /bin/sh -c 'bundle && yarn'
     - name: Commit any new files
       run: |
-        cd $GITHUB_WORKSPACE/Docker-Bridgetown-Installer
-        DOCKER_BRIDGETOWN_INSTALLER_VERSION="Installer 0.1.0"
-        BRIDGETOWN_VERSION=`docker run --rm rubystarterkits/bridgetown-installer:latest bridgetown -v`
-
         cd $GITHUB_WORKSPACE/App
+        DOCKER_BRIDGETOWN_INSTALLER_VERSION="Installer 0.1.0"
+        BRIDGETOWN_VERSION=`bridgetown -v`
+
         git config --local user.email "github-actions@example.com"
         git config --local user.name "GitHub Actions"
         git add .
