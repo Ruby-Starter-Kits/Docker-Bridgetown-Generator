@@ -1,30 +1,31 @@
 # Changelog
 
-## [Unreleased](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/tree/HEAD)
+## [Unreleased](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/tree/HEAD)
 
-[Full Changelog](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/compare/0c2b7a5b45cdab5d57d8f2ede0343ab3212d9964...HEAD)
+[Full Changelog](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/compare/0c2b7a5b45cdab5d57d8f2ede0343ab3212d9964...HEAD)
 
 **Implemented enhancements:**
 
-- Adding template repo auto builder [\#10](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/10) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adding template repo auto builder [\#10](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/10) ([MikeRogers0](https://github.com/MikeRogers0))
 
 **Merged pull requests:**
 
-- feat: Encourage using the template repo [\#18](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/18) ([MikeRogers0](https://github.com/MikeRogers0))
-- Explictly set NODE\_ENV on Netlify [\#17](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
-- Use default netlify deploy command from Bridgetown [\#16](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/16) ([MikeRogers0](https://github.com/MikeRogers0))
-- Running Bundle & Yarn when building template app [\#15](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/15) ([MikeRogers0](https://github.com/MikeRogers0))
-- Using rsync to copy hidden files from App-Template [\#13](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/13) ([MikeRogers0](https://github.com/MikeRogers0))
-- Using correct path where build is made [\#12](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/12) ([MikeRogers0](https://github.com/MikeRogers0))
-- I added to wrong link in the Rails Readme [\#11](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/11) ([MikeRogers0](https://github.com/MikeRogers0))
-- Renaming Organisation to Ruby-Starter-Kits [\#9](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/9) ([MikeRogers0](https://github.com/MikeRogers0))
-- Squashing down size of Docker Installer file [\#8](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/8) ([MikeRogers0](https://github.com/MikeRogers0))
-- Adding note on: bridgetown-automation-docker-compose repo [\#7](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/7) ([MikeRogers0](https://github.com/MikeRogers0))
-- Attaching ports 4001 & 4002 [\#6](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/6) ([MikeRogers0](https://github.com/MikeRogers0))
-- Always pull down the latest docker image in installer [\#5](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
-- Updating Readme to include more thoughts [\#4](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/4) ([MikeRogers0](https://github.com/MikeRogers0))
-- Using a monthly cronjob to build the image [\#3](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/3) ([MikeRogers0](https://github.com/MikeRogers0))
-- Adding a docker auto build & push script [\#1](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Installer/pull/1) ([MikeRogers0](https://github.com/MikeRogers0))
+- Rename repo to Docker-Bridgetown-Generator [\#19](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/19) ([MikeRogers0](https://github.com/MikeRogers0))
+- feat: Encourage using the template repo [\#18](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/18) ([MikeRogers0](https://github.com/MikeRogers0))
+- Explictly set NODE\_ENV on Netlify [\#17](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
+- Use default netlify deploy command from Bridgetown [\#16](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/16) ([MikeRogers0](https://github.com/MikeRogers0))
+- Running Bundle & Yarn when building template app [\#15](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/15) ([MikeRogers0](https://github.com/MikeRogers0))
+- Using rsync to copy hidden files from App-Template [\#13](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/13) ([MikeRogers0](https://github.com/MikeRogers0))
+- Using correct path where build is made [\#12](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/12) ([MikeRogers0](https://github.com/MikeRogers0))
+- I added to wrong link in the Rails Readme [\#11](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/11) ([MikeRogers0](https://github.com/MikeRogers0))
+- Renaming Organisation to Ruby-Starter-Kits [\#9](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/9) ([MikeRogers0](https://github.com/MikeRogers0))
+- Squashing down size of Docker Installer file [\#8](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/8) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adding note on: bridgetown-automation-docker-compose repo [\#7](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/7) ([MikeRogers0](https://github.com/MikeRogers0))
+- Attaching ports 4001 & 4002 [\#6](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/6) ([MikeRogers0](https://github.com/MikeRogers0))
+- Always pull down the latest docker image in installer [\#5](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
+- Updating Readme to include more thoughts [\#4](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/4) ([MikeRogers0](https://github.com/MikeRogers0))
+- Using a monthly cronjob to build the image [\#3](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/3) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adding a docker auto build & push script [\#1](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/1) ([MikeRogers0](https://github.com/MikeRogers0))
 
 
 
