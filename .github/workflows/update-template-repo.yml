@@ -49,7 +49,7 @@ jobs:
         cd $GITHUB_WORKSPACE/App
         shopt -s extglob
         rm -rfv !(".git"|"."|".."|"node_modules")
-    - name: Build latest version of rails
+    - name: Build latest version of bridgetown
       run: |
         cd $GITHUB_WORKSPACE/App
         bridgetown new . --force
