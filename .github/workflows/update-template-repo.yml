@@ -20,8 +20,8 @@ jobs:
         persist-credentials: false
     - uses: actions/checkout@v2
       with:
-        repository: 'Ruby-Starter-Kits/Docker-Bridgetown-Installer'
-        path: Docker-Bridgetown-Installer
+        repository: 'Ruby-Starter-Kits/Docker-Bridgetown-Generator'
+        path: Docker-Bridgetown-Generator
         persist-credentials: false
     - name: Set up Ruby 2.7
       uses: ruby/setup-ruby@v1
@@ -56,7 +56,7 @@ jobs:
     - name: Copy docker files
       run: |
         cd $GITHUB_WORKSPACE/App
-        rsync -a $GITHUB_WORKSPACE/Docker-Bridgetown-Installer/App-Template/ $GITHUB_WORKSPACE/App/
+        rsync -a $GITHUB_WORKSPACE/Docker-Bridgetown-Generator/App-Template/ $GITHUB_WORKSPACE/App/
         cp $GITHUB_WORKSPACE/App/.env.sample $GITHUB_WORKSPACE/App/.env
     - name: Pull docker image
       run: |
