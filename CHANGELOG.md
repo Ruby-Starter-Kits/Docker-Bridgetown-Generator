@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- bug: Mentioned rails when I meant bridgetown [\#20](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/20) ([MikeRogers0](https://github.com/MikeRogers0))
 - Rename repo to Docker-Bridgetown-Generator [\#19](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/19) ([MikeRogers0](https://github.com/MikeRogers0))
 - feat: Encourage using the template repo [\#18](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/18) ([MikeRogers0](https://github.com/MikeRogers0))
 - Explictly set NODE\_ENV on Netlify [\#17](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
