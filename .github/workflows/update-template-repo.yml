@@ -2,8 +2,8 @@ name: Update Template Repo
 
 on:
   push:
-    #branches:
-      #- master
+    branches:
+      - master
   schedule:
     - cron:  '0 5 1 * *'
 
