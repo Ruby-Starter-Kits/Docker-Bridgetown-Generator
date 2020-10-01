@@ -68,8 +68,10 @@ jobs:
         docker-compose build
     - name: Commit any new files
       run: |
-        cd $GITHUB_WORKSPACE/App
+        cd $GITHUB_WORKSPACE/Docker-Bridgetown-Generator
         INSTALLER_VERSION="Installer `git describe --abbrev=0 --tags`"
+
+        cd $GITHUB_WORKSPACE/App
         BRIDGETOWN_VERSION=`bundle exec bridgetown -v`
 
         git config --local user.email "github-actions@example.com"
