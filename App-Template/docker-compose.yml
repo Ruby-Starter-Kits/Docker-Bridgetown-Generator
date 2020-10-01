@@ -12,6 +12,8 @@ x-app: &app
     target: development
   env_file:
     - .env
+  tmpfs:
+    - /tmp
   volumes:
     - .:/usr/src/app:cached
     - bundler:/usr/local/bundle:delegated
