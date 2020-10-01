@@ -6,7 +6,12 @@
 
 **Implemented enhancements:**
 
+- Adding MIT License to generated repo [\#23](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/23) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding template repo auto builder [\#10](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/10) ([MikeRogers0](https://github.com/MikeRogers0))
+
+**Closed issues:**
+
+- feature request: add a license to the template [\#22](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/issues/22)
 
 **Merged pull requests:**
 
