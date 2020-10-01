@@ -22,6 +22,7 @@ jobs:
       with:
         repository: 'Ruby-Starter-Kits/Docker-Bridgetown-Generator'
         path: Docker-Bridgetown-Generator
+        fetch-depth: 0
         persist-credentials: false
     - name: Set up Ruby 2.7
       uses: ruby/setup-ruby@v1
@@ -69,7 +70,6 @@ jobs:
     - name: Commit any new files
       run: |
         cd $GITHUB_WORKSPACE/Docker-Bridgetown-Generator
-        git fetch --prune --unshallow
         INSTALLER_VERSION="Installer `git describe --abbrev=0 --tags`"
 
         cd $GITHUB_WORKSPACE/App
