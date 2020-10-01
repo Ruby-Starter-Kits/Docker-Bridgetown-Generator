@@ -69,6 +69,7 @@ jobs:
     - name: Commit any new files
       run: |
         cd $GITHUB_WORKSPACE/Docker-Bridgetown-Generator
+        git fetch --prune --unshallow
         INSTALLER_VERSION="Installer `git describe --abbrev=0 --tags`"
 
         cd $GITHUB_WORKSPACE/App
