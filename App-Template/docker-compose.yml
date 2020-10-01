@@ -4,7 +4,7 @@
 version: '2.4'
 
 x-app: &app
-  image: bridgetown:latest
+  image: bridgetown:0.1.0
   mem_limit: 512m
   build:
     context: .
