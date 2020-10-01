@@ -2,8 +2,8 @@ name: Update Template Repo
 
 on:
   push:
-    branches:
-      - master
+    #branches:
+      #- master
   schedule:
     - cron:  '0 5 1 * *'
 
@@ -69,13 +69,13 @@ jobs:
     - name: Commit any new files
       run: |
         cd $GITHUB_WORKSPACE/App
-        DOCKER_BRIDGETOWN_INSTALLER_VERSION="Installer 0.1.0"
+        INSTALLER_VERSION="Installer `git describe --abbrev=0 --tags`"
         BRIDGETOWN_VERSION=`bundle exec bridgetown -v`
 
         git config --local user.email "github-actions@example.com"
         git config --local user.name "GitHub Actions"
         git add .
-        git commit -am "$BRIDGETOWN_VERSION | $DOCKER_BRIDGETOWN_INSTALLER_VERSION" || echo "No changes to commit"
+        git commit -am "$BRIDGETOWN_VERSION | $INSTALLER_VERSION" || echo "No changes to commit"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
