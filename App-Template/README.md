@@ -16,7 +16,7 @@ Then navigate your browser to https://127.0.0.1:4000/ to see your site.
 
 ### Running one off commands
 
-If you'd like to run a one off command within your container, use `docker-compose run --rm web`, e.g:
+If you'd like to run a one off command within your container, use `docker-compose run --rm web <YourCommand>`, e.g:
 
 ```bash
 $ docker-compose run --rm web yarn add stimulus
