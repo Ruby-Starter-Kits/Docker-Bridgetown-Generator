@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Updating Readme to include references to lisense & author [\#26](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/26) ([MikeRogers0](https://github.com/MikeRogers0))
 - Using Git Tag for version number for commit reference [\#25](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/25) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v0.1.0](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/tree/v0.1.0) (2020-10-01)
