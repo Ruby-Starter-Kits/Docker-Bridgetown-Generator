@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/tree/HEAD)
 
-[Full Changelog](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/compare/0c2b7a5b45cdab5d57d8f2ede0343ab3212d9964...HEAD)
+[Full Changelog](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/compare/v0.1.0...HEAD)
+
+**Merged pull requests:**
+
+- Using Git Tag for version number for commit reference [\#25](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/25) ([MikeRogers0](https://github.com/MikeRogers0))
+
+## [v0.1.0](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/tree/v0.1.0) (2020-10-01)
+
+[Full Changelog](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/compare/0c2b7a5b45cdab5d57d8f2ede0343ab3212d9964...v0.1.0)
 
 **Implemented enhancements:**
 
