@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Revert "Adding tmpfs config option" [\#29](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/29) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding tmpfs config option [\#28](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/28) ([MikeRogers0](https://github.com/MikeRogers0))
 - Running container as non-root user [\#27](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/27) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating Readme to include references to lisense & author [\#26](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/26) ([MikeRogers0](https://github.com/MikeRogers0))
