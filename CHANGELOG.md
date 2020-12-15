@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Explicitly sticking to default bundler version [\#33](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/33) ([MikeRogers0](https://github.com/MikeRogers0))
 - Retagging satackey/action-docker-layer-caching to v0 [\#32](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/32) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bump satackey/action-docker-layer-caching from v0.0.8 to v0.0.10 [\#30](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Revert "Adding tmpfs config option" [\#29](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/29) ([MikeRogers0](https://github.com/MikeRogers0))
