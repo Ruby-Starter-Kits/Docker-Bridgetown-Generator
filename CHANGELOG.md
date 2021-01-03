@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Setting branch reference when pushing [\#35](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/35) ([MikeRogers0](https://github.com/MikeRogers0))
 - Increasing Ruby to 2.7.2 [\#34](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/34) ([MikeRogers0](https://github.com/MikeRogers0))
 - Explicitly sticking to default bundler version [\#33](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/33) ([MikeRogers0](https://github.com/MikeRogers0))
 - Retagging satackey/action-docker-layer-caching to v0 [\#32](https://github.com/Ruby-Starter-Kits/Docker-Bridgetown-Generator/pull/32) ([MikeRogers0](https://github.com/MikeRogers0))
